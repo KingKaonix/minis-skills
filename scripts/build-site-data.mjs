@@ -25,6 +25,11 @@ function formatSize(bytes) {
   return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
 }
 
+const downloadsDir = path.join(root, "public", "downloads");
+const hasPackages =
+  fs.existsSync(downloadsDir) &&
+  fs.readdirSync(downloadsDir).some((file) => file.endsWith(".zip"));
+
 const seen = new Set();
 const skills = [];
 
@@ -38,8 +43,12 @@ for (const entry of catalog) {
     (entry.description || entry.shortDescription || "").trim() ||
     `A community-built skill for Minis: ${entry.name || directory}.`;
 
-  const zipPath = path.join(root, "public", "downloads", `${directory}.zip`);
-  const size = fs.existsSync(zipPath) ? formatSize(fs.statSync(zipPath).size) : undefined;
+  const zipPath = path.join(downloadsDir, `${directory}.zip`);
+  const hasZip = fs.existsSync(zipPath);
+  // When packages exist, only list skills that actually have a downloadable
+  // package. This keeps dead download links out of the catalog.
+  if (hasPackages && !hasZip) continue;
+  const size = hasZip ? formatSize(fs.statSync(zipPath).size) : undefined;
 
   skills.push({
     id: entry.id || directory,
