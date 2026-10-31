@@ -1,0 +1,18 @@
+# Source & Attribution
+
+- **Skill:** `gtm-system`
+- **Directory:** `gtm-system`
+- **Original source:** https://clawskills.sh/skills/aronchick-gtm-system
+- **Markdown endpoint:** https://clawskills.sh/skills-markdown/aronchick/gtm-system.md
+- **Converted at:** 2026-10-31T22:11:35.291Z
+- **License:** Unknown
+
+## Conversion notes
+
+This package was converted from the publicly listed skill page above.
+Only `SKILL.md` was available from the markdown endpoint at conversion time;
+bundled scripts, references, and other assets referenced by the skill may not
+be included. No secrets are included.
+
+Attribution is retained here inside the package. The catalog website does not
+link to the original source.

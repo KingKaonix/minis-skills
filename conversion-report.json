@@ -1,0 +1,406 @@
+{
+  "generatedAt": "2026-10-31T22:35:42.853Z",
+  "durationSeconds": 348.4,
+  "mode": "full",
+  "options": {
+    "limit": null,
+    "concurrency": 6,
+    "retryFailed": false,
+    "skipZips": false,
+    "only": null
+  },
+  "totals": {
+    "catalogEntries": 5143,
+    "selected": 5143,
+    "succeeded": 5089,
+    "failed": 54,
+    "fromCache": 4953,
+    "zipsGenerated": 5089,
+    "indexedSkills": 5089
+  },
+  "http": {
+    "requests": 942,
+    "retries": 0,
+    "rateLimited": 0
+  },
+  "failures": [
+    {
+      "id": "ads-manager-agent",
+      "name": "ads-manager-agent",
+      "directory": "ads-manager-agent",
+      "source": "https://clawskills.sh/skills/amekala-ads-manager-agent",
+      "reason": "https://clawskills.sh/skills-markdown/amekala/ads-manager-agent.md -> HTTP 404; https://clawskills.sh/skills-markdown/amekala/ads-manager-agent.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/amekala/ads-manager-agent/SKILL.md -> HTTP 404; https://clawhub.ai/amekala/skills/ads-manager-agent -> readme content not found"
+    },
+    {
+      "id": "agent-confessions",
+      "name": "agent-confessions",
+      "directory": "agent-confessions",
+      "source": "https://clawskills.sh/skills/ultimatebos-agent-confessions",
+      "reason": "https://clawskills.sh/skills-markdown/ultimatebos/agent-confessions.md -> HTTP 404; https://clawskills.sh/skills/ultimatebos-agent-confessions -> HTTP 404; https://clawhub.ai/ultimatebos/skills/agent-confessions -> readme content not found"
+    },
+    {
+      "id": "agent-memory-ultimate",
+      "name": "agent-memory-ultimate",
+      "directory": "agent-memory-ultimate",
+      "source": "https://clawskills.sh/skills/globalcaos-agent-memory-ultimate",
+      "reason": "https://clawskills.sh/skills-markdown/globalcaos/agent-memory-ultimate.md -> HTTP 404; https://clawskills.sh/skills-markdown/globalcaos/agent-memory-ultimate.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/globalcaos/agent-memory-ultimate/SKILL.md -> HTTP 404; https://clawhub.ai/globalcaos/skills/agent-memory-ultimate -> readme content not found"
+    },
+    {
+      "id": "ai-humor-ultimate",
+      "name": "ai-humor-ultimate",
+      "directory": "ai-humor-ultimate",
+      "source": "https://clawskills.sh/skills/globalcaos-ai-humor-ultimate",
+      "reason": "https://clawskills.sh/skills-markdown/globalcaos/ai-humor-ultimate.md -> HTTP 404; https://clawskills.sh/skills-markdown/globalcaos/ai-humor-ultimate.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/globalcaos/ai-humor-ultimate/SKILL.md -> HTTP 404; https://clawhub.ai/globalcaos/skills/ai-humor-ultimate -> readme content not found"
+    },
+    {
+      "id": "ai-voice-chat",
+      "name": "ai-voice-chat",
+      "directory": "ai-voice-chat",
+      "source": "https://clawskills.sh/skills/bolander72-ai-voice-chat",
+      "reason": "https://clawskills.sh/skills-markdown/bolander72/ai-voice-chat.md -> HTTP 404; https://clawskills.sh/skills-markdown/bolander72/ai-voice-chat.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/bolander72/ai-voice-chat/SKILL.md -> HTTP 404; https://clawhub.ai/bolander72/skills/ai-voice-chat -> readme content not found"
+    },
+    {
+      "id": "album-cover-generation",
+      "name": "album-cover-generation",
+      "directory": "album-cover-generation",
+      "source": "https://clawskills.sh/skills/eftalyurtseven-album-cover-generation",
+      "reason": "https://clawskills.sh/skills-markdown/eftalyurtseven/album-cover-generation.md -> HTTP 404; https://clawskills.sh/skills-markdown/eftalyurtseven/album-cover-generation.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/eftalyurtseven/album-cover-generation/SKILL.md -> HTTP 404; https://clawhub.ai/eftalyurtseven/skills/album-cover-generation -> readme content not found"
+    },
+    {
+      "id": "aluvia-web-proxy",
+      "name": "aluvia-web-proxy",
+      "directory": "aluvia-web-proxy",
+      "source": "https://clawskills.sh/skills/aluvia-connectivity-aluvia-web-proxy",
+      "reason": "https://clawskills.sh/skills-markdown/aluvia-connectivity/aluvia-web-proxy.md -> HTTP 404; https://clawskills.sh/skills-markdown/aluvia-connectivity/aluvia-web-proxy.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/aluvia-connectivity/aluvia-web-proxy/SKILL.md -> HTTP 404; https://clawhub.ai/aluvia-connectivity/skills/aluvia-web-proxy -> readme content not found"
+    },
+    {
+      "id": "ar-filter-generation",
+      "name": "ar-filter-generation",
+      "directory": "ar-filter-generation",
+      "source": "https://clawskills.sh/skills/eftalyurtseven-ar-filter-generation",
+      "reason": "https://clawskills.sh/skills-markdown/eftalyurtseven/ar-filter-generation.md -> HTTP 404; https://clawskills.sh/skills-markdown/eftalyurtseven/ar-filter-generation.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/eftalyurtseven/ar-filter-generation/SKILL.md -> HTTP 404; https://clawhub.ai/eftalyurtseven/skills/ar-filter-generation -> readme content not found"
+    },
+    {
+      "id": "bria-ai-api",
+      "name": "bria-ai-api",
+      "directory": "bria-ai-api",
+      "source": "https://clawskills.sh/skills/galbria-bria-ai-api",
+      "reason": "https://clawskills.sh/skills-markdown/galbria/bria-ai-api.md -> HTTP 404; https://clawskills.sh/skills-markdown/galbria/bria-ai-api.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/galbria/bria-ai-api/SKILL.md -> HTTP 404; https://clawhub.ai/galbria/skills/bria-ai-api -> readme content not found"
+    },
+    {
+      "id": "bria-ai-api-skill",
+      "name": "bria-ai-api-skill",
+      "directory": "bria-ai-api-skill",
+      "source": "https://clawskills.sh/skills/galbria-bria-ai-api-skill",
+      "reason": "https://clawskills.sh/skills-markdown/galbria/bria-ai-api-skill.md -> HTTP 404; https://clawskills.sh/skills-markdown/galbria/bria-ai-api-skill.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/galbria/bria-ai-api-skill/SKILL.md -> HTTP 404; https://clawhub.ai/galbria/skills/bria-ai-api-skill -> readme content not found"
+    },
+    {
+      "id": "bria-ai-client",
+      "name": "bria-ai-client",
+      "directory": "bria-ai-client",
+      "source": "https://clawskills.sh/skills/galbria-bria-ai-client",
+      "reason": "https://clawskills.sh/skills-markdown/galbria/bria-ai-client.md -> HTTP 404; https://clawskills.sh/skills-markdown/galbria/bria-ai-client.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/galbria/bria-ai-client/SKILL.md -> HTTP 404; https://clawhub.ai/galbria/skills/bria-ai-client -> readme content not found"
+    },
+    {
+      "id": "brochure-design-generation",
+      "name": "brochure-design-generation",
+      "directory": "brochure-design-generation",
+      "source": "https://clawskills.sh/skills/eftalyurtseven-brochure-design-generation",
+      "reason": "https://clawskills.sh/skills-markdown/eftalyurtseven/brochure-design-generation.md -> HTTP 404; https://clawskills.sh/skills-markdown/eftalyurtseven/brochure-design-generation.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/eftalyurtseven/brochure-design-generation/SKILL.md -> HTTP 404; https://clawhub.ai/eftalyurtseven/skills/brochure-design-generation -> readme content not found"
+    },
+    {
+      "id": "castreader",
+      "name": "castreader",
+      "directory": "castreader",
+      "source": "https://clawskills.sh/skills/castreader-castreader",
+      "reason": "https://clawskills.sh/skills-markdown/castreader/castreader.md -> HTTP 404; https://clawskills.sh/skills-markdown/castreader/castreader.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/castreader/castreader/SKILL.md -> HTTP 404; https://clawhub.ai/castreader/skills/castreader -> readme content not found"
+    },
+    {
+      "id": "cognitive-clarity",
+      "name": "cognitive-clarity",
+      "directory": "cognitive-clarity",
+      "source": "https://clawskills.sh/skills/cognitivevelocity-cognitive-clarity",
+      "reason": "https://clawskills.sh/skills-markdown/cognitivevelocity/cognitive-clarity.md -> HTTP 404; https://clawskills.sh/skills-markdown/cognitivevelocity/cognitive-clarity.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/cognitivevelocity/cognitive-clarity/SKILL.md -> HTTP 404; https://clawhub.ai/cognitivevelocity/skills/cognitive-clarity -> readme content not found"
+    },
+    {
+      "id": "competitor-docs",
+      "name": "competitor-docs",
+      "directory": "competitor-docs",
+      "source": "https://clawskills.sh/skills/carev01-competitor-docs",
+      "reason": "https://clawskills.sh/skills-markdown/carev01/competitor-docs.md -> HTTP 404; https://clawskills.sh/skills-markdown/carev01/competitor-docs.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/carev01/competitor-docs/SKILL.md -> HTTP 404; https://clawhub.ai/carev01/skills/competitor-docs -> readme content not found"
+    },
+    {
+      "id": "content-machine",
+      "name": "content-machine",
+      "directory": "content-machine",
+      "source": "https://clawskills.sh/skills/cryptocana-content-machine",
+      "reason": "https://clawskills.sh/skills-markdown/cryptocana/content-machine.md -> HTTP 404; https://clawskills.sh/skills-markdown/cryptocana/content-machine.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/cryptocana/content-machine/SKILL.md -> HTTP 404; https://clawhub.ai/cryptocana/skills/content-machine -> readme content not found"
+    },
+    {
+      "id": "contrato-locacao-broa",
+      "name": "contrato-locacao-broa",
+      "directory": "contrato-locacao-broa",
+      "source": "https://clawskills.sh/skills/david-evaristo-contrato-locacao-broa",
+      "reason": "https://clawskills.sh/skills-markdown/david-evaristo/contrato-locacao-broa.md -> HTTP 404; https://clawskills.sh/skills-markdown/david-evaristo/contrato-locacao-broa.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/david-evaristo/contrato-locacao-broa/SKILL.md -> HTTP 404; https://clawhub.ai/david-evaristo/skills/contrato-locacao-broa -> readme content not found"
+    },
+    {
+      "id": "cron-visualizer",
+      "name": "cron-visualizer",
+      "directory": "cron-visualizer",
+      "source": "https://clawskills.sh/skills/autogame-17-cron-visualizer",
+      "reason": "https://clawskills.sh/skills-markdown/autogame-17/cron-visualizer.md -> HTTP 404; https://clawskills.sh/skills-markdown/autogame-17/cron-visualizer.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/autogame-17/cron-visualizer/SKILL.md -> HTTP 404; https://clawhub.ai/autogame-17/skills/cron-visualizer -> readme content not found"
+    },
+    {
+      "id": "cybercentry-cyber-security-consultant",
+      "name": "cybercentry-cyber-security-consultant",
+      "directory": "cybercentry-cyber-security-consultant",
+      "source": "https://clawskills.sh/skills/cybercentry-cybercentry-cyber-security-consultant",
+      "reason": "https://clawskills.sh/skills-markdown/cybercentry/cybercentry-cyber-security-consultant.md -> HTTP 404; https://clawskills.sh/skills-markdown/cybercentry/cybercentry-cyber-security-consultant.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/cybercentry/cybercentry-cyber-security-consultant/SKILL.md -> HTTP 404; https://clawhub.ai/cybercentry/skills/cybercentry-cyber-security-consultant -> readme content not found"
+    },
+    {
+      "id": "cybercentry-private-data-verification",
+      "name": "cybercentry-private-data-verification",
+      "directory": "cybercentry-private-data-verification",
+      "source": "https://clawskills.sh/skills/cybercentry-cybercentry-private-data-verification",
+      "reason": "https://clawskills.sh/skills-markdown/cybercentry/cybercentry-private-data-verification.md -> HTTP 404; https://clawskills.sh/skills-markdown/cybercentry/cybercentry-private-data-verification.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/cybercentry/cybercentry-private-data-verification/SKILL.md -> HTTP 404; https://clawhub.ai/cybercentry/skills/cybercentry-private-data-verification -> readme content not found"
+    },
+    {
+      "id": "cybercentry-quantum-cryptography-verification",
+      "name": "cybercentry-quantum-cryptography-verification",
+      "directory": "cybercentry-quantum-cryptography-verification",
+      "source": "https://clawskills.sh/skills/cybercentry-cybercentry-quantum-cryptography-verification",
+      "reason": "https://clawskills.sh/skills-markdown/cybercentry/cybercentry-quantum-cryptography-verification.md -> HTTP 404; https://clawskills.sh/skills-markdown/cybercentry/cybercentry-quantum-cryptography-verification.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/cybercentry/cybercentry-quantum-cryptography-verification/SKILL.md -> HTTP 404; https://clawhub.ai/cybercentry/skills/cybercentry-quantum-cryptography-verification -> readme content not found"
+    },
+    {
+      "id": "cybercentry-solidity-code-verification",
+      "name": "cybercentry-solidity-code-verification",
+      "directory": "cybercentry-solidity-code-verification",
+      "source": "https://clawskills.sh/skills/cybercentry-cybercentry-solidity-code-verification",
+      "reason": "https://clawskills.sh/skills-markdown/cybercentry/cybercentry-solidity-code-verification.md -> HTTP 404; https://clawskills.sh/skills-markdown/cybercentry/cybercentry-solidity-code-verification.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/cybercentry/cybercentry-solidity-code-verification/SKILL.md -> HTTP 404; https://clawhub.ai/cybercentry/skills/cybercentry-solidity-code-verification -> readme content not found"
+    },
+    {
+      "id": "cybercentry-web-application-verification",
+      "name": "cybercentry-web-application-verification",
+      "directory": "cybercentry-web-application-verification",
+      "source": "https://clawskills.sh/skills/cybercentry-cybercentry-web-application-verification",
+      "reason": "https://clawskills.sh/skills-markdown/cybercentry/cybercentry-web-application-verification.md -> HTTP 404; https://clawskills.sh/skills-markdown/cybercentry/cybercentry-web-application-verification.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/cybercentry/cybercentry-web-application-verification/SKILL.md -> HTTP 404; https://clawhub.ai/cybercentry/skills/cybercentry-web-application-verification -> readme content not found"
+    },
+    {
+      "id": "dellight-cio-intelligence",
+      "name": "dellight-cio-intelligence",
+      "directory": "dellight-cio-intelligence",
+      "source": "https://clawskills.sh/skills/arthurelgindell-dellight-cio-intelligence",
+      "reason": "https://clawskills.sh/skills-markdown/arthurelgindell/dellight-cio-intelligence.md -> HTTP 404; https://clawskills.sh/skills-markdown/arthurelgindell/dellight-cio-intelligence.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/arthurelgindell/dellight-cio-intelligence/SKILL.md -> HTTP 404; https://clawhub.ai/arthurelgindell/skills/dellight-cio-intelligence -> readme content not found"
+    },
+    {
+      "id": "echo-agent",
+      "name": "echo-agent",
+      "directory": "echo-agent",
+      "source": "https://clawskills.sh/skills/krishna3554-echo-agent",
+      "reason": "https://clawskills.sh/skills-markdown/krishna3554/echo-agent.md -> HTTP 404; https://clawskills.sh/skills-markdown/krishna3554/echo-agent.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/krishna3554/echo-agent/SKILL.md -> HTTP 404; https://clawhub.ai/krishna3554/skills/echo-agent -> readme content not found"
+    },
+    {
+      "id": "gerador-contrato-locacao-preview",
+      "name": "gerador-contrato-locacao-preview",
+      "directory": "gerador-contrato-locacao-preview",
+      "source": "https://clawskills.sh/skills/david-evaristo-gerador-contrato-locacao-preview",
+      "reason": "https://clawskills.sh/skills-markdown/david-evaristo/gerador-contrato-locacao-preview.md -> HTTP 404; https://clawskills.sh/skills-markdown/david-evaristo/gerador-contrato-locacao-preview.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/david-evaristo/gerador-contrato-locacao-preview/SKILL.md -> HTTP 404; https://clawhub.ai/david-evaristo/skills/gerador-contrato-locacao-preview -> readme content not found"
+    },
+    {
+      "id": "ghggh",
+      "name": "ghggh",
+      "directory": "ghggh",
+      "source": "https://clawskills.sh/skills/chenpinji-ghggh",
+      "reason": "https://clawskills.sh/skills-markdown/chenpinji/ghggh.md -> HTTP 404; https://clawskills.sh/skills-markdown/chenpinji/ghggh.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/chenpinji/ghggh/SKILL.md -> HTTP 404; https://clawhub.ai/chenpinji/skills/ghggh -> readme content not found"
+    },
+    {
+      "id": "ghgghg",
+      "name": "ghgghg",
+      "directory": "ghgghg",
+      "source": "https://clawskills.sh/skills/chenpinji-ghgghg",
+      "reason": "https://clawskills.sh/skills-markdown/chenpinji/ghgghg.md -> HTTP 404; https://clawskills.sh/skills-markdown/chenpinji/ghgghg.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/chenpinji/ghgghg/SKILL.md -> HTTP 404; https://clawhub.ai/chenpinji/skills/ghgghg -> readme content not found"
+    },
+    {
+      "id": "grafana-plugin",
+      "name": "grafana-plugin",
+      "directory": "grafana-plugin",
+      "source": "https://clawskills.sh/skills/darkstards9-grafana-plugin",
+      "reason": "https://clawskills.sh/skills-markdown/darkstards9/grafana-plugin.md -> HTTP 404; https://clawskills.sh/skills-markdown/darkstards9/grafana-plugin.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/darkstards9/grafana-plugin/SKILL.md -> HTTP 404; https://clawhub.ai/darkstards9/skills/grafana-plugin -> readme content not found"
+    },
+    {
+      "id": "guardian-core",
+      "name": "guardian-core",
+      "directory": "guardian-core",
+      "source": "https://clawskills.sh/skills/bluemax30001-guardian-core",
+      "reason": "https://clawskills.sh/skills-markdown/bluemax30001/guardian-core.md -> HTTP 404; https://clawskills.sh/skills-markdown/bluemax30001/guardian-core.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/bluemax30001/guardian-core/SKILL.md -> HTTP 404; https://clawhub.ai/bluemax30001/skills/guardian-core -> readme content not found"
+    },
+    {
+      "id": "guardskills",
+      "name": "guardskills",
+      "directory": "guardskills",
+      "source": "https://clawskills.sh/skills/felixondesk-guardskills",
+      "reason": "https://clawskills.sh/skills-markdown/felixondesk/guardskills.md -> HTTP 404; https://clawskills.sh/skills-markdown/felixondesk/guardskills.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/felixondesk/guardskills/SKILL.md -> HTTP 404; https://clawhub.ai/felixondesk/skills/guardskills -> readme content not found"
+    },
+    {
+      "id": "k8s-memory-tune",
+      "name": "k8s-memory-tune",
+      "directory": "k8s-memory-tune",
+      "source": "https://clawskills.sh/skills/2233admin-k8s-memory-tune",
+      "reason": "https://clawskills.sh/skills-markdown/2233admin/k8s-memory-tune.md -> HTTP 404; https://clawskills.sh/skills-markdown/2233admin/k8s-memory-tune.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/2233admin/k8s-memory-tune/SKILL.md -> HTTP 404; https://clawhub.ai/2233admin/skills/k8s-memory-tune -> readme content not found"
+    },
+    {
+      "id": "kalibr",
+      "name": "kalibr",
+      "directory": "kalibr",
+      "source": "https://clawskills.sh/skills/devonakelley-kalibr",
+      "reason": "https://clawskills.sh/skills-markdown/devonakelley/kalibr.md -> HTTP 404; https://clawskills.sh/skills-markdown/devonakelley/kalibr.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/devonakelley/kalibr/SKILL.md -> HTTP 404; https://clawhub.ai/devonakelley/skills/kalibr -> readme content not found"
+    },
+    {
+      "id": "leak",
+      "name": "leak",
+      "directory": "leak",
+      "source": "https://clawskills.sh/skills/eucalyptus-viminalis-leak",
+      "reason": "https://clawskills.sh/skills-markdown/eucalyptus-viminalis/leak.md -> HTTP 404; https://clawskills.sh/skills-markdown/eucalyptus-viminalis/leak.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/eucalyptus-viminalis/leak/SKILL.md -> HTTP 404; https://clawhub.ai/eucalyptus-viminalis/skills/leak -> readme content not found"
+    },
+    {
+      "id": "listing-swarm",
+      "name": "listing-swarm",
+      "directory": "listing-swarm",
+      "source": "https://clawhub.ai/skills/listing-swarm",
+      "reason": "https://clawskills.sh/skills-markdown/listing-swarm/listing-swarm.md -> HTTP 404; https://clawskills.sh/skills/listing-swarm-listing-swarm -> HTTP 404; https://clawhub.ai/listing-swarm/skills/listing-swarm -> readme content not found; https://clawhub.ai/skills/listing-swarm -> readme content not found"
+    },
+    {
+      "id": "lukso-agent-comms",
+      "name": "lukso-agent-comms",
+      "directory": "lukso-agent-comms",
+      "source": "https://clawskills.sh/skills/bitcargocrew-lukso-agent-comms",
+      "reason": "https://clawskills.sh/skills-markdown/bitcargocrew/lukso-agent-comms.md -> HTTP 404; https://clawskills.sh/skills-markdown/bitcargocrew/lukso-agent-comms.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/bitcargocrew/lukso-agent-comms/SKILL.md -> HTTP 404; https://clawhub.ai/bitcargocrew/skills/lukso-agent-comms -> readme content not found"
+    },
+    {
+      "id": "mansion",
+      "name": "mansion",
+      "directory": "mansion",
+      "source": "https://clawskills.sh/skills/sarthib7-mansion",
+      "reason": "https://clawskills.sh/skills-markdown/sarthib7/mansion.md -> HTTP 404; https://clawskills.sh/skills-markdown/sarthib7/mansion.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/sarthib7/mansion/SKILL.md -> HTTP 404; https://clawhub.ai/sarthib7/skills/mansion -> readme content not found"
+    },
+    {
+      "id": "moviepilot",
+      "name": "moviepilot",
+      "directory": "moviepilot",
+      "source": "https://clawskills.sh/skills/codfrm-moviepilot",
+      "reason": "https://clawskills.sh/skills-markdown/codfrm/moviepilot.md -> HTTP 404; https://clawskills.sh/skills-markdown/codfrm/moviepilot.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/codfrm/moviepilot/SKILL.md -> HTTP 404; https://clawhub.ai/codfrm/skills/moviepilot -> readme content not found"
+    },
+    {
+      "id": "multilogin",
+      "name": "multilogin",
+      "directory": "multilogin",
+      "source": "https://clawskills.sh/skills/glebkazachinskiy-multilogin",
+      "reason": "https://clawskills.sh/skills-markdown/glebkazachinskiy/multilogin.md -> HTTP 404; https://clawskills.sh/skills-markdown/glebkazachinskiy/multilogin.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/glebkazachinskiy/multilogin/SKILL.md -> HTTP 404; https://clawhub.ai/glebkazachinskiy/skills/multilogin -> readme content not found"
+    },
+    {
+      "id": "nuggetz-swarm",
+      "name": "nuggetz-swarm",
+      "directory": "nuggetz-swarm",
+      "source": "https://clawskills.sh/skills/ezisezis-nuggetz-swarm",
+      "reason": "https://clawskills.sh/skills-markdown/ezisezis/nuggetz-swarm.md -> HTTP 404; https://clawskills.sh/skills-markdown/ezisezis/nuggetz-swarm.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/ezisezis/nuggetz-swarm/SKILL.md -> HTTP 404; https://clawhub.ai/ezisezis/skills/nuggetz-swarm -> readme content not found"
+    },
+    {
+      "id": "oc-skill",
+      "name": "oc-skill",
+      "directory": "oc-skill",
+      "source": "https://clawskills.sh/skills/evolinkai-oc-skill",
+      "reason": "https://clawskills.sh/skills-markdown/evolinkai/oc-skill.md -> HTTP 404; https://clawskills.sh/skills-markdown/evolinkai/oc-skill.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/evolinkai/oc-skill/SKILL.md -> HTTP 404; https://clawhub.ai/evolinkai/skills/oc-skill -> readme content not found"
+    },
+    {
+      "id": "session-guard",
+      "name": "session-guard",
+      "directory": "session-guard",
+      "source": "https://clawskills.sh/skills/bowen31337-session-guard",
+      "reason": "https://clawskills.sh/skills-markdown/bowen31337/session-guard.md -> HTTP 404; https://clawskills.sh/skills-markdown/bowen31337/session-guard.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/bowen31337/session-guard/SKILL.md -> HTTP 404; https://clawhub.ai/bowen31337/skills/session-guard -> readme content not found"
+    },
+    {
+      "id": "shield-agent",
+      "name": "shield-agent",
+      "directory": "shield-agent",
+      "source": "https://clawskills.sh/skills/bowen31337-shield-agent",
+      "reason": "https://clawskills.sh/skills-markdown/bowen31337/shield-agent.md -> HTTP 404; https://clawskills.sh/skills-markdown/bowen31337/shield-agent.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/bowen31337/shield-agent/SKILL.md -> HTTP 404; https://clawhub.ai/bowen31337/skills/shield-agent -> readme content not found"
+    },
+    {
+      "id": "skill-survival",
+      "name": "skill-survival",
+      "directory": "skill-survival",
+      "source": "https://clawskills.sh/skills/yrpang-skill-survival",
+      "reason": "https://clawskills.sh/skills-markdown/yrpang/skill-survival.md -> HTTP 404; https://clawskills.sh/skills-markdown/yrpang/skill-survival.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/yrpang/skill-survival/SKILL.md -> HTTP 404; https://clawhub.ai/yrpang/skills/skill-survival -> readme content not found"
+    },
+    {
+      "id": "test-upload2",
+      "name": "test-upload2",
+      "directory": "test-upload2",
+      "source": "https://clawskills.sh/skills/kevan5-test-upload2",
+      "reason": "https://clawskills.sh/skills-markdown/kevan5/test-upload2.md -> HTTP 404; https://clawskills.sh/skills-markdown/kevan5/test-upload2.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/kevan5/test-upload2/SKILL.md -> HTTP 404; https://clawhub.ai/kevan5/skills/test-upload2 -> readme content not found"
+    },
+    {
+      "id": "the-only",
+      "name": "the-only",
+      "directory": "the-only",
+      "source": "https://clawskills.sh/skills/cdotlock-the-only",
+      "reason": "https://clawskills.sh/skills-markdown/cdotlock/the-only.md -> HTTP 404; https://clawskills.sh/skills-markdown/cdotlock/the-only.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/cdotlock/the-only/SKILL.md -> HTTP 404; https://clawhub.ai/cdotlock/skills/the-only -> readme content not found"
+    },
+    {
+      "id": "ui-controller",
+      "name": "ui-controller",
+      "directory": "ui-controller",
+      "source": "https://clawskills.sh/skills/sadikjarvis-ui-controller",
+      "reason": "https://clawskills.sh/skills-markdown/sadikjarvis/ui-controller.md -> HTTP 404; https://clawskills.sh/skills-markdown/sadikjarvis/ui-controller.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/sadikjarvis/ui-controller/SKILL.md -> HTTP 404; https://clawhub.ai/sadikjarvis/skills/ui-controller -> readme content not found"
+    },
+    {
+      "id": "ultimate-fork-and-skill-scanner",
+      "name": "ultimate-fork-and-skill-scanner",
+      "directory": "ultimate-fork-and-skill-scanner",
+      "source": "https://clawskills.sh/skills/globalcaos-ultimate-fork-and-skill-scanner",
+      "reason": "https://clawskills.sh/skills-markdown/globalcaos/ultimate-fork-and-skill-scanner.md -> HTTP 404; https://clawskills.sh/skills-markdown/globalcaos/ultimate-fork-and-skill-scanner.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/globalcaos/ultimate-fork-and-skill-scanner/SKILL.md -> HTTP 404; https://clawhub.ai/globalcaos/skills/ultimate-fork-and-skill-scanner -> readme content not found"
+    },
+    {
+      "id": "video-editor-ai",
+      "name": "video-editor-ai",
+      "directory": "video-editor-ai",
+      "source": "https://clawhub.ai/imo14reifey/video-editor-ai",
+      "reason": "https://clawskills.sh/skills-markdown/imo14reifey/video-editor-ai.md -> HTTP 404; https://clawskills.sh/skills/imo14reifey-video-editor-ai -> HTTP 404; https://clawhub.ai/imo14reifey/skills/video-editor-ai -> readme content not found; https://clawhub.ai/imo14reifey/video-editor-ai -> readme content not found"
+    },
+    {
+      "id": "web-automation-apify",
+      "name": "web-automation-apify",
+      "directory": "web-automation-apify",
+      "source": "https://clawskills.sh/skills/g4dr-web-automation-apify",
+      "reason": "https://clawskills.sh/skills-markdown/g4dr/web-automation-apify.md -> HTTP 404; https://clawskills.sh/skills-markdown/g4dr/web-automation-apify.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/g4dr/web-automation-apify/SKILL.md -> HTTP 404; https://clawhub.ai/g4dr/skills/web-automation-apify -> readme content not found"
+    },
+    {
+      "id": "wisediag-medocr",
+      "name": "wisediag-medocr",
+      "directory": "wisediag-medocr",
+      "source": "https://clawskills.sh/skills/fmdmm-wisediag-medocr",
+      "reason": "https://clawskills.sh/skills-markdown/fmdmm/wisediag-medocr.md -> HTTP 404; https://clawskills.sh/skills-markdown/fmdmm/wisediag-medocr.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/fmdmm/wisediag-medocr/SKILL.md -> HTTP 404; https://clawhub.ai/fmdmm/skills/wisediag-medocr -> readme content not found"
+    },
+    {
+      "id": "wiseocr",
+      "name": "wiseocr",
+      "directory": "wiseocr",
+      "source": "https://clawskills.sh/skills/fmdmm-wiseocr",
+      "reason": "https://clawskills.sh/skills-markdown/fmdmm/wiseocr.md -> HTTP 404; https://clawskills.sh/skills-markdown/fmdmm/wiseocr.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/fmdmm/wiseocr/SKILL.md -> HTTP 404; https://clawhub.ai/fmdmm/skills/wiseocr -> readme content not found"
+    },
+    {
+      "id": "yr-no-weather",
+      "name": "yr-no-weather",
+      "directory": "yr-no-weather",
+      "source": "https://clawskills.sh/skills/brandon2255p-yr-no-weather",
+      "reason": "https://clawskills.sh/skills-markdown/brandon2255p/yr-no-weather.md -> HTTP 404; https://clawskills.sh/skills-markdown/brandon2255p/yr-no-weather.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/brandon2255p/yr-no-weather/SKILL.md -> HTTP 404; https://clawhub.ai/brandon2255p/skills/yr-no-weather -> readme content not found"
+    },
+    {
+      "id": "ztpc-spam-sweep",
+      "name": "ztpc-spam-sweep",
+      "directory": "ztpc-spam-sweep",
+      "source": "https://clawskills.sh/skills/cubiczeta-ztpc-spam-sweep",
+      "reason": "https://clawskills.sh/skills-markdown/cubiczeta/ztpc-spam-sweep.md -> HTTP 404; https://clawskills.sh/skills-markdown/cubiczeta/ztpc-spam-sweep.md -> HTTP 404; https://raw.githubusercontent.com/openclaw/skills/main/skills/cubiczeta/ztpc-spam-sweep/SKILL.md -> HTTP 404; https://clawhub.ai/cubiczeta/skills/ztpc-spam-sweep -> readme content not found"
+    }
+  ]
+}

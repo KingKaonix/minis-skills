@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Conversion pipeline cache (raw fetched markdown; regenerate with scripts/convert-skills.mjs)
+.cache/
