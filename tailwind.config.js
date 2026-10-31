@@ -1,28 +1,55 @@
-import { defineConfig } from 'tailwindcss'
-
+/** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx,vue}'],
+  darkMode: "class",
+  content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
+    screens: {
+      sm: "576px",
+      md: "768px",
+      lg: "992px",
+      xl: "1200px",
+      "2xl": "1400px",
+    },
     extend: {
       colors: {
-        'zarion-dark': '#0f0f0f',
-        'zarion-surface': '#181818',
-        'zarion-surface-hover': '#222222',
-        'zarion-border': '#333333',
-        'zarion-border-light': '#555555',
-        'zarion-accent': '#3b82f6',
-        'zarion-accent-hover': '#2563eb',
-        'zarion-gold': '#d4af37',
-        'zarion-gray': '#888888',
-        'zarion-gray-400': '#a3a3a3',
-        'zarion-purple': '#a855f7',
-        'zarion-blue': '#3b82f6',
-        'zarion-green': '#22c55e',
+        primary: "#ee7b11",
+        "primary-soft": "#fff4e8",
+        secondary: "#effbff",
+        warning: "#ee7b11",
+        grey: "#f9f9fb",
+        dark: "#141414",
+        "Dark-primary": "#0d1117",
+        cream: "#fff4ce",
+        darkcream: "#ffdfaf",
+        success: "#37a05b",
+        "Snowy-sky": "#2753c9",
+        lightyellow: "#ffd44d",
+        Smoke: "#f1f1f5",
+        darkmode: "#0b1220",
+        darklight: "#0f172a",
+        midnight_text: "#102d47",
+        "Sky-mist-blue": "#aec8df",
+        darkborder: "#1e293b",
+        border_color: "#224767",
+        blue: "#1642b9",
       },
-      fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-      }
-    }
+      boxShadow: {
+        "card-shadow":
+          "rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px",
+        glow: "0 0 0 1px rgba(238, 123, 17, 0.15), 0 18px 60px -20px rgba(238, 123, 17, 0.45)",
+      },
+      fontSize: {
+        22: ["1.375rem", { lineHeight: "2rem" }],
+        28: ["1.75rem", { lineHeight: "2.25rem" }],
+        32: ["2rem", { lineHeight: "2.5rem" }],
+        36: ["2.25rem", { lineHeight: "2.625rem" }],
+        40: ["2.5rem", { lineHeight: "3rem" }],
+        65: ["4.063rem", { lineHeight: "4.875rem" }],
+      },
+      maxWidth: {
+        "8xl": "90rem",
+      },
+    },
   },
   plugins: [],
-}
+};
