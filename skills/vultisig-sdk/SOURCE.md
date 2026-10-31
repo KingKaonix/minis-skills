@@ -1,0 +1,18 @@
+# Source & Attribution
+
+- **Skill:** `vultisig-sdk`
+- **Directory:** `vultisig-sdk`
+- **Original source:** https://clawskills.sh/skills/realpaaao-vultisig-sdk
+- **Markdown endpoint:** https://clawskills.sh/skills-markdown/realpaaao/vultisig-sdk.md
+- **Converted at:** 2026-10-31T22:14:59.132Z
+- **License:** Unknown
+
+## Conversion notes
+
+This package was converted from the publicly listed skill page above.
+Only `SKILL.md` was available from the markdown endpoint at conversion time;
+bundled scripts, references, and other assets referenced by the skill may not
+be included. No secrets are included.
+
+Attribution is retained here inside the package. The catalog website does not
+link to the original source.
