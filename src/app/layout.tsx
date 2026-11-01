@@ -10,7 +10,8 @@ import NextTopLoader from "nextjs-toploader";
 const manrope = Manrope({ subsets: ["latin"], display: "swap" });
 
 const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://minis-skills.vercel.app";
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  "https://skills-jmulikgiltnercoms-projects.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
