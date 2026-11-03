@@ -4,7 +4,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Github, Menu, Search, X } from "lucide-react";
-import Logo from "./Logo";
 import ThemeToggler from "./ThemeToggler";
 
 const NAV = [
@@ -46,8 +45,6 @@ export default function Header() {
       }`}
     >
       <div className="shell flex h-16 items-center justify-between gap-4">
-        <Logo />
-
         <nav className="hidden items-center gap-1 md:flex">
           {NAV.map((item) => (
             <Link
