@@ -12,6 +12,7 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import { getRelatedSkills, getSkillBySlug } from "@/lib/skills";
+import CopyInstallPrompt from "../../components/CopyInstallPrompt";
 import SkillCard from "../../components/SkillCard";
 import SkillMarkdown from "../../components/SkillMarkdown";
 
@@ -43,6 +44,11 @@ export default async function SkillDetailPage({ params }: PageProps) {
 
   const size = skill.size ?? null;
   const related = getRelatedSkills(skill, 4);
+
+  const siteUrl =
+    process.env.NEXT_PUBLIC_SITE_URL ??
+    "https://skills-jmulikgiltnercoms-projects.vercel.app";
+  const skillUrl = `${siteUrl}${skill.skillPath}`;
 
   return (
     <div className="section">
@@ -98,6 +104,7 @@ export default async function SkillDetailPage({ params }: PageProps) {
               >
                 <FileCode2 size={16} /> View SKILL.md
               </a>
+              <CopyInstallPrompt name={skill.name} skillUrl={skillUrl} />
             </div>
 
             <div className="mt-10 card p-6 sm:p-8">
