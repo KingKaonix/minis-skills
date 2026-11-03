@@ -2,7 +2,7 @@
 
 A community catalog of installable skills for [Minis](https://openminis.app), the private on-device AI agent.
 
-Browse 5,000+ skills, read the full `SKILL.md`, and download a ready-to-install `.zip` directly from the site. No accounts, no marketplace gate, no links back to third-party directories.
+Browse 5,000+ skills, read the full `SKILL.md`, and download a ready-to-install `.zip` directly from the site. On each skill page there's also a **Copy install prompt** button that copies instructions you can paste straight into Minis to install the skill directly — no manual download or unzip needed. No accounts, no marketplace gate, no links back to third-party directories.
 
 ## Stack
 
@@ -44,7 +44,8 @@ Set `NEXT_PUBLIC_SITE_URL` to your production URL if you want canonical metadata
 │   ├── page.tsx             # home
 │   ├── skills/              # catalog + skill detail pages
 │   ├── categories/          # category index
-│   └── about/               # about + install guide
+│   ├── about/               # about + install guide
+│   └── components/          # shared UI (e.g. CopyInstallPrompt)
 ├── src/lib/skills.ts        # server-side catalog helpers
 ├── public/
 │   ├── site-skills.json     # compact catalog shipped to the site
@@ -77,6 +78,20 @@ description: >
 
 The site renders the Markdown body on the skill detail page and serves the
 same file inside the downloadable zip.
+
+## Installing a skill from the catalog
+
+On a skill detail page you have two ways to get the skill into Minis:
+
+1. **Download .zip** — grab the self-hosted package, unzip it into your Minis
+   skills directory, and ask Minis to use the skill.
+2. **Copy install prompt** — click "Copy install prompt" next to the download
+   button, then paste the copied text into your Minis chat. It tells the agent
+   which skill to install and points it at the skill's `SKILL.md`, so Minis can
+   fetch and load the instructions directly.
+
+Either way, review `SKILL.md` (and any bundled scripts) before installing,
+especially for skills that touch credentials, the shell, or your personal data.
 
 ## Attribution
 
