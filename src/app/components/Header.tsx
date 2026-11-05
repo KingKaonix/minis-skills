@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { Github, Menu, Search, X } from "lucide-react";
 import ThemeToggler from "./ThemeToggler";
 import Logo from "./Logo";
+import OnlineIndicator from "./OnlineIndicator";
 
 const NAV = [
   { label: "Skills", href: "/skills" },
@@ -82,6 +83,7 @@ export default function Header() {
             <Github size={17} />
           </a>
           <ThemeToggler />
+          <OnlineIndicator />
           <button
             type="button"
             onClick={() => setOpen((value) => !value)}

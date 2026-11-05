@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import AnalyticsTracker from "./components/AnalyticsTracker";
 import { ThemeProvider } from "next-themes";
 import NextTopLoader from "nextjs-toploader";
 
@@ -69,6 +70,7 @@ export default function RootLayout({
           <main className="min-h-screen pt-16">{children}</main>
           <Footer />
           <ScrollToTop />
+          <AnalyticsTracker />
         </ThemeProvider>
       </body>
     </html>

@@ -12,7 +12,8 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import { getRelatedSkills, getSkillBySlug } from "@/lib/skills";
-import CopyInstallPrompt from "../../components/CopyInstallPrompt";
+import { getPageStats, getSkillStats } from "@/lib/analytics";
+import SkillActions from "../../components/SkillActions";
 import SkillCard from "../../components/SkillCard";
 import SkillMarkdown from "../../components/SkillMarkdown";
 
@@ -45,10 +46,12 @@ export default async function SkillDetailPage({ params }: PageProps) {
   const size = skill.size ?? null;
   const related = getRelatedSkills(skill, 4);
 
+  const skillStats = getSkillStats(skill.directory);
+  const pageStats = getPageStats(skill.skillPath);
+
   const siteUrl =
     process.env.NEXT_PUBLIC_SITE_URL ??
     "https://skills-jmulikgiltnercoms-projects.vercel.app";
-  const skillUrl = `${siteUrl}${skill.skillPath}`;
 
   return (
     <div className="section">
@@ -90,22 +93,44 @@ export default async function SkillDetailPage({ params }: PageProps) {
             </p>
 
             <div className="mt-6 flex flex-wrap items-center gap-3">
-              <a href={skill.downloadUrl} download className="btn-primary">
-                <Download size={16} /> Download .zip
-                {size ? (
-                  <span className="text-white/70">· {size}</span>
-                ) : null}
-              </a>
-              <a
-                href={skill.skillPath}
-                target="_blank"
-                rel="noreferrer"
-                className="btn-secondary"
-              >
-                <FileCode2 size={16} /> View SKILL.md
-              </a>
-              <CopyInstallPrompt name={skill.name} skillUrl={skillUrl} />
+              <SkillActions
+                skill={{
+                  name: skill.name,
+                  directory: skill.directory,
+                  downloadUrl: skill.downloadUrl,
+                  skillPath: skill.skillPath,
+                  size,
+                  siteUrl,
+                }}
+              />
             </div>
+
+            {(
+              skillStats.downloads > 0 ||
+              skillStats.installs > 0 ||
+              pageStats.pageViews > 0
+            ) && (
+              <div className="mt-4 flex flex-wrap items-center gap-4 text-[11px] text-black/35 dark:text-white/35">
+                {skillStats.downloads > 0 && (
+                  <span className="flex items-center gap-1">
+                    <Download size={12} />
+                    {skillStats.downloads} downloads
+                  </span>
+                )}
+                {skillStats.installs > 0 && (
+                  <span className="flex items-center gap-1">
+                    <CheckCircle2 size={12} />
+                    {skillStats.installs} installs
+                  </span>
+                )}
+                {pageStats.pageViews > 0 && (
+                  <span className="flex items-center gap-1">
+                    <FileCode2 size={12} />
+                    {pageStats.uniqueVisitors.length} unique views
+                  </span>
+                )}
+              </div>
+            )}
 
             <div className="mt-10 card p-6 sm:p-8">
               <div className="mb-6 flex items-center gap-2 border-b border-black/5 pb-4 dark:border-white/10">

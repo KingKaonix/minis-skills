@@ -2,23 +2,28 @@
 
 import { Check, Clipboard } from "lucide-react";
 import { useState } from "react";
+import { useAnalytics } from "./AnalyticsTracker";
 
 type CopyInstallPromptProps = {
   name: string;
+  directory: string;
   skillUrl: string;
 };
 
 export default function CopyInstallPrompt({
   name,
+  directory,
   skillUrl,
 }: CopyInstallPromptProps) {
   const [copied, setCopied] = useState(false);
+  const { recordInstall } = useAnalytics();
 
   const prompt = `Install the skill "${name}" into Minis. Read the skill instructions at ${skillUrl} and add the skill to your Minis skills directory.`;
 
   async function handleCopy() {
     try {
       await navigator.clipboard.writeText(prompt);
+      recordInstall(directory);
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     } catch {
