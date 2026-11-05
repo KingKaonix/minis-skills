@@ -46,8 +46,8 @@ export default async function SkillDetailPage({ params }: PageProps) {
   const size = skill.size ?? null;
   const related = getRelatedSkills(skill, 4);
 
-  const skillStats = getSkillStats(skill.directory);
-  const pageStats = getPageStats(skill.skillPath);
+  const skillStats = await getSkillStats(skill.directory);
+  const pageStats = await getPageStats(skill.skillPath);
 
   const siteUrl =
     process.env.NEXT_PUBLIC_SITE_URL ??
@@ -126,7 +126,7 @@ export default async function SkillDetailPage({ params }: PageProps) {
                 {pageStats.pageViews > 0 && (
                   <span className="flex items-center gap-1">
                     <FileCode2 size={12} />
-                    {pageStats.uniqueVisitors.length} unique views
+                    {pageStats.uniqueVisitors} unique views
                   </span>
                 )}
               </div>

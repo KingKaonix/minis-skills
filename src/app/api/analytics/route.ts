@@ -30,13 +30,13 @@ export async function GET(req: NextRequest) {
   const online = searchParams.get("online") === "1";
 
   const body: Record<string, unknown> = {};
-  if (skill) body.skill = getSkillStats(skill);
-  if (path) body.page = getPageStats(path);
-  if (online) body.online = getOnlineCounts();
+  if (skill) body.skill = await getSkillStats(skill);
+  if (path) body.page = await getPageStats(path);
+  if (online) body.online = await getOnlineCounts();
   if (!skill && !path && !online) {
     body.skill = {};
     body.page = {};
-    body.online = getOnlineCounts();
+    body.online = await getOnlineCounts();
   }
 
   return NextResponse.json(body);
@@ -66,7 +66,7 @@ export async function POST(req: NextRequest) {
     switch (body.event) {
       case "page_view":
         if (!body.path) throw new Error("path required");
-        recordEvent({
+        await recordEvent({
           type: "page_view",
           path: body.path,
           visitorId,
@@ -75,7 +75,7 @@ export async function POST(req: NextRequest) {
         break;
       case "download":
         if (!body.skill) throw new Error("skill required");
-        recordEvent({
+        await recordEvent({
           type: "download",
           skill: body.skill,
           visitorId,
@@ -84,7 +84,7 @@ export async function POST(req: NextRequest) {
         break;
       case "install":
         if (!body.skill) throw new Error("skill required");
-        recordEvent({
+        await recordEvent({
           type: "install",
           skill: body.skill,
           visitorId,
@@ -92,7 +92,7 @@ export async function POST(req: NextRequest) {
         });
         break;
       case "presence":
-        recordEvent({ type: "presence", visitorId, visitorType });
+        await recordEvent({ type: "presence", visitorId, visitorType });
         break;
       default:
         return NextResponse.json({ error: "unknown event" }, { status: 400 });

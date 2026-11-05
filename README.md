@@ -37,6 +37,16 @@ npm start
 
 Set `NEXT_PUBLIC_SITE_URL` to your production URL if you want canonical metadata to point at it.
 
+## Analytics (Vercel Postgres)
+
+Download, install, page-view, and online-count stats are stored in Postgres.
+Set one of these in your Vercel project settings:
+
+- `DATABASE_URL` — full Postgres connection string (Vercel Postgres provides this)
+- `POSTGRES_URL` — alternate connection string
+
+When neither is set, analytics silently degrades to empty defaults (no database required for local development). The `analytics_events` table is created automatically on first use.
+
 ## Project layout
 
 ```
