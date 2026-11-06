@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
 
 type VisitorType = "human" | "agent";
 
@@ -38,6 +39,7 @@ async function sendEvent(event: {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(event),
+      keepalive: true,
     });
   } catch {
     // Best-effort tracking; never break the page.
@@ -45,12 +47,14 @@ async function sendEvent(event: {
 }
 
 /**
- * Hook that initialises a visitor id, reports a page view on mount, keeps a
- * presence heartbeat alive, and exposes recordDownload / recordInstall.
+ * Hook that initialises a visitor id, reports a page view on mount and on
+ * every client-side navigation, keeps a presence heartbeat alive, and exposes
+ * recordDownload / recordInstall.
  */
 export function useAnalytics() {
   const [visitorId, setVisitorId] = useState<string | null>(null);
   const [visitorType, setVisitorType] = useState<VisitorType>("human");
+  const pathname = usePathname();
 
   useEffect(() => {
     let id =
@@ -88,7 +92,7 @@ export function useAnalytics() {
     return () => {
       if (heartbeatRef.current) clearInterval(heartbeatRef.current);
     };
-  }, [visitorId, visitorType]);
+  }, [visitorId, visitorType, pathname]);
 
   const recordDownload = (skill: string) => {
     if (!visitorId) return;

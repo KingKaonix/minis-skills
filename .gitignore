@@ -45,3 +45,4 @@ yarn-error.log*
 
 # Conversion pipeline cache (raw fetched markdown; regenerate with scripts/convert-skills.mjs)
 .cache/
+.env*

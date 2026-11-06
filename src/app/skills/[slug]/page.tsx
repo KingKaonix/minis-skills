@@ -105,32 +105,20 @@ export default async function SkillDetailPage({ params }: PageProps) {
               />
             </div>
 
-            {(
-              skillStats.downloads > 0 ||
-              skillStats.installs > 0 ||
-              pageStats.pageViews > 0
-            ) && (
-              <div className="mt-4 flex flex-wrap items-center gap-4 text-[11px] text-black/35 dark:text-white/35">
-                {skillStats.downloads > 0 && (
-                  <span className="flex items-center gap-1">
-                    <Download size={12} />
-                    {skillStats.downloads} downloads
-                  </span>
-                )}
-                {skillStats.installs > 0 && (
-                  <span className="flex items-center gap-1">
-                    <CheckCircle2 size={12} />
-                    {skillStats.installs} installs
-                  </span>
-                )}
-                {pageStats.pageViews > 0 && (
-                  <span className="flex items-center gap-1">
-                    <FileCode2 size={12} />
-                    {pageStats.uniqueVisitors} unique views
-                  </span>
-                )}
-              </div>
-            )}
+            <div className="mt-4 flex flex-wrap items-center gap-4 text-[11px] text-black/35 dark:text-white/35">
+              <span className="flex items-center gap-1">
+                <Download size={12} />
+                {skillStats.downloads} downloads
+              </span>
+              <span className="flex items-center gap-1">
+                <CheckCircle2 size={12} />
+                {skillStats.installs} installs
+              </span>
+              <span className="flex items-center gap-1">
+                <FileCode2 size={12} />
+                {pageStats.uniqueVisitors} unique views
+              </span>
+            </div>
 
             <div className="mt-10 card p-6 sm:p-8">
               <div className="mb-6 flex items-center gap-2 border-b border-black/5 pb-4 dark:border-white/10">
